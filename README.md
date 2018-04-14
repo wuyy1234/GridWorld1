@@ -47,7 +47,13 @@ ant test-run-java//运行
 <img src="http://imglf3.nosdn.127.net/img/Z281REhERnhNZldLRkNMQzBuTHR4RkhVQUt4Y0VTMm95endrWkRVR2hpSWFmNXhPbVdYY1ZRPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0"  />  
 
  * 其他命令行见下面链接:  
- https://blog.csdn.net/yubo_725/article/details/52326746
+ https://blog.csdn.net/yubo_725/article/details/52326746  
+ 
+> 总结 ：  
+> Ant是一种基于Java的build工具。理论上来说，它有些类似于（Unix）C中的make ，但没有make的缺陷。   
+> make的工具本质上是基于shell（语言）的：他们计算依赖关系，然后执行命令。  
+> 与基于shell命令的扩展模式不同，Ant用Java的类来扩展。  
+> make在编写时要时刻留意空格的问题，而ant就没有这个问题。  
  
 ### java  
 * java的GUI的主要学习链接：http://www.weixueyuan.net/view/6056.html  
@@ -85,5 +91,44 @@ public class SuitTest {
 
 }
 ```  
+ * 创建参数测试  
+ * 该类被注解为 @RunWith(Parameterized.class)， @RunWith 注解让JUnit来调用其中的注释来运行测试类，代替使用内置的JUnit运行器，Parameterized 是一个在JUnit内的运行器将运行相同的测试用例组在不同的输入。  
+ * 这个类有一个构造函数，存储测试数据。  
+ * 这个类有一个静态方法生成并返回测试数据，并注明@Parameters注解。  
+ * 这个类有一个测试，它需要注解@Test到方法。  
+ 
+``` 
+package com.yiibai.junit;
+import static org.junit.Assert.assertEquals;
+import java.util.Arrays;
+import java.util.Collection;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
 
-  
+@RunWith(Parameterized.class)
+public class CalculateTest {
+	private int expected;
+	private int first;
+	private int second;
+	public CalculateTest(int expectedResult, int firstNumber, int secondNumber) {
+		this.expected = expectedResult;
+		this.first = firstNumber;
+		this.second = secondNumber;
+	}
+	@Parameters
+	public static Collection addedNumbers() {
+		return Arrays.asList(new Integer[][] { { 3, 1, 2 }, { 5, 2, 3 },
+				{ 7, 3, 4 }, { 9, 4, 5 }, });
+	}
+	@Test
+	public void sum() {
+		Calculate add = new Calculate();
+		System.out.println("Addition with parameters : " + first + " and "
+				+ second);
+		assertEquals(expected, add.sum(first, second));
+	}
+}
+```  
+   
