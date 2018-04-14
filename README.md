@@ -53,7 +53,8 @@ ant test-run-java//运行
 * java的GUI的主要学习链接：http://www.weixueyuan.net/view/6056.html  
 
 ### Junit  
-* JUnit是用于编写和运行可重复的自动化测试的开源测试框架， 这样可以保证我们的代码按预期工作。JUnit可广泛用于工业和作为支架(从命令行)或IDE(如Eclipse)内单独的Java程序。  
+* Junit主要学习链接：https://www.yiibai.com/junit/creating-suite-tests.html#article-start
+* JUnit是用于编写和运行可重复的自动化测试的开源测试框架， 这样可以保证我们的代码按预期工作。JUnit可广泛用于工业和作为支架(从命令行)或IDE(如Eclipse)内单独的Java程序。  
 
 > * JUnit提供：  
 > 断言测试预期结果。
