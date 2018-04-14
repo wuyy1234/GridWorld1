@@ -44,7 +44,30 @@ ant test-run-java//运行
 ```  
 
  * 运行结果如下： 
-<img src="http://imglf3.nosdn.127.net/img/Z281REhERnhNZldLRkNMQzBuTHR4RkhVQUt4Y0VTMm95endrWkRVR2hpSWFmNXhPbVdYY1ZRPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0"  />
+<img src="http://imglf3.nosdn.127.net/img/Z281REhERnhNZldLRkNMQzBuTHR4RkhVQUt4Y0VTMm95endrWkRVR2hpSWFmNXhPbVdYY1ZRPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0"  />  
+
+ * 其他命令行见下面链接:  
+ https://blog.csdn.net/yubo_725/article/details/52326746
+ 
+### java  
+* java的GUI的主要学习链接：http://www.weixueyuan.net/view/6056.html  
+
+### Junit  
+* JUnit是用于编写和运行可重复的自动化测试的开源测试框架， 这样可以保证我们的代码按预期工作。JUnit可广泛用于工业和作为支架(从命令行)或IDE(如Eclipse)内单独的Java程序。  
+
+> * JUnit提供：  
+> 断言测试预期结果。
+> 测试功能共享通用的测试数据。  
+> 测试套件轻松地组织和运行测试。  
+> 图形和文本测试运行。  
+> 断言测试预期结果。  
+>
+> * JUnit用于测试：  
+> 整个对象  
+> 对象的一部分 - 交互的方法或一些方法  
+> 几个对象之间的互动(交互)  
+
+
 
 
   
