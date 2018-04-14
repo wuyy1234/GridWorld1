@@ -16,5 +16,35 @@
 >   * 切换方法：在「命令行模式（command mode）」下按一下字母「i」就可以进入「插入模式（Insert mode）」，这时候你就可以开始输入文字了。  
 >   * 编辑好后，需从插入模式切换为命令行模式才能对文件进行保存，切换方法：按「ESC」键。  
 >   * 保存并退出文件：在命令模式下输入:wq 即可！ 
-   
+
+### Ant  
+* 先创建名字为build.xml的文件
+```  
+<?xml version="1.0"?>  
+<project name="HelloWorld" default="test" basedir="">  
+    <target name="test-compile">  
+        <javac srcdir="src" destdir="classes/" />  
+    </target>  
+     <target name="test-run-java">  
+        <java classname="helloworld">  
+            <classpath>  
+                <pathelement path="classes" />  
+            </classpath>  
+        </java>  
+    </target>  
+</project>  
+```  
+
+* 将helloworld.java放进文件夹src,同时mkdir classes  
+
+``` 
+ant test-compile//编译，相当于javac
+ant test-run-java//运行
+
+```  
+
+ * 运行结果如下： 
+<img src="http://imglf3.nosdn.127.net/img/Z281REhERnhNZldLRkNMQzBuTHR4RkhVQUt4Y0VTMm95endrWkRVR2hpSWFmNXhPbVdYY1ZRPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0"  />
+
+
   
