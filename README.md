@@ -68,7 +68,22 @@ ant test-run-java//运行
 > 对象的一部分 - 交互的方法或一些方法  
 > 几个对象之间的互动(交互)  
 
+ * 创建套件测试  
+ * 测试套件是一些测试不同类用例，可以使用@RunWith和@Suite将分布在多个java的测试文件统一调度，示例：  
+ * 有两个测试文件：PrepareMyBagTest.java和AddPencilsTest.java  
+ * 现在，我们将创建一个测试套件，以便运行上面的类在一起。例子如下，可以通过调用SuiteTest.java来调用PrepareMyBagTest.java和AddPencilsTest.java  
+ * 用鼠标右键单击 test 源文件夹，并创建一个新的名为SuiteTest.java 的Java类，使用下面的代码：
 
+ * SuiteTest.java
+```  
+package com.yiibai.junit;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+@RunWith(Suite.class)
+@Suite.SuiteClasses({ PrepareMyBagTest.class, AddPencilsTest.class })
+public class SuitTest {
 
+}
+```  
 
   
