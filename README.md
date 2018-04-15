@@ -49,7 +49,7 @@ ant test-run-java//运行
  * 其他命令行见下面链接:  
  https://blog.csdn.net/yubo_725/article/details/52326746  
  
-> 总结 ：  
+> 总结 ： 
 > Ant是一种基于Java的build工具。理论上来说，它有些类似于（Unix）C中的make ，但没有make的缺陷。  
 > make的工具本质上是基于shell（语言）的：他们计算依赖关系，然后执行命令。  
 > 与基于shell命令的扩展模式不同，Ant用Java的类来扩展。  
@@ -132,7 +132,7 @@ public class CalculateTest {
 }
 ```
 
-> * 总结在云品牌上运行的问题： 
+> * 总结在云平台上运行的问题：  
 > 建立新project的时候要额外添加junit 4.9的包,如下:  
 <img src="http://imglf4.nosdn.127.net/img/Z281REhERnhNZlZ1MmtTZXc0Q0FtdG1nTXNYMHU4TnYwZ3hhS0d3Q0tPZlVvZE44OTd3SDZ3PT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0"  />   
 
