@@ -137,6 +137,8 @@ public class CalculateTest {
 <img src="http://imglf4.nosdn.127.net/img/Z281REhERnhNZlZ1MmtTZXc0Q0FtdG1nTXNYMHU4TnYwZ3hhS0d3Q0tPZlVvZE44OTd3SDZ3PT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0"  />   
 
 > 加test.java的时候要从全局来加，例如下面这个就有问题，要像第二张图那样加：  
-<img src="http://imglf4.nosdn.127.net/img/Z281REhERnhNZlZ1MmtTZXc0Q0FtaFFvTkZJaVhCSVdtUVVDb3lwako1QXF3L2gvV2ZJMFZ3PT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0"  />   
-> 正常运行的操作：  
-<img src="http://imglf6.nosdn.127.net/img/Z281REhERnhNZlZ1MmtTZXc0Q0FtaTRvSDNERkZlcEJsRlJmZGpFLzNkWjlOYXorYzdIekpBPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0"  />  
+<img src="http://imglf4.nosdn.127.net/img/Z281REhERnhNZlZ1MmtTZXc0Q0FtaFFvTkZJaVhCSVdtUVVDb3lwako1QXF3L2gvV2ZJMFZ3PT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0"  />
+
+> 正常运行的操作  
+
+  <img src="http://imglf6.nosdn.127.net/img/Z281REhERnhNZlZ1MmtTZXc0Q0FtaTRvSDNERkZlcEJsRlJmZGpFLzNkWjlOYXorYzdIekpBPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0"  />  
