@@ -22,7 +22,7 @@
 ```  
 <?xml version="1.0"?>  
 <project name="HelloWorld" default="test" basedir="">  
-    <target name="test-compile">  
+    <target name="compile">  
         <javac srcdir="src" destdir="classes/" />  
     </target>  
      <target name="test-run-java">  
@@ -50,7 +50,7 @@ ant test-run-java//运行
  https://blog.csdn.net/yubo_725/article/details/52326746  
  
 > 总结 ：  
-> Ant是一种基于Java的build工具。理论上来说，它有些类似于（Unix）C中的make ，但没有make的缺陷。   
+> Ant是一种基于Java的build工具。理论上来说，它有些类似于（Unix）C中的make ，但没有make的缺陷。  
 > make的工具本质上是基于shell（语言）的：他们计算依赖关系，然后执行命令。  
 > 与基于shell命令的扩展模式不同，Ant用Java的类来扩展。  
 > make在编写时要时刻留意空格的问题，而ant就没有这个问题。  
@@ -130,5 +130,13 @@ public class CalculateTest {
 		assertEquals(expected, add.sum(first, second));
 	}
 }
-```  
-   
+```
+
+> * 总结在云品牌上运行的问题： 
+> 建立新project的时候要额外添加junit 4.9的包,如下:  
+<img src="http://imglf4.nosdn.127.net/img/Z281REhERnhNZlZ1MmtTZXc0Q0FtdG1nTXNYMHU4TnYwZ3hhS0d3Q0tPZlVvZE44OTd3SDZ3PT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0"  />   
+
+> 加test.java的时候要从全局来加，例如下面这个就有问题，要像第二张图那样加：  
+<img src="http://imglf4.nosdn.127.net/img/Z281REhERnhNZlZ1MmtTZXc0Q0FtaFFvTkZJaVhCSVdtUVVDb3lwako1QXF3L2gvV2ZJMFZ3PT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0"  />   
+> 正常运行的操作：  
+<img src="http://imglf6.nosdn.127.net/img/Z281REhERnhNZlZ1MmtTZXc0Q0FtaTRvSDNERkZlcEJsRlJmZGpFLzNkWjlOYXorYzdIekpBPT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0"  />  
